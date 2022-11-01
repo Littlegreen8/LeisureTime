@@ -37,7 +37,6 @@ rect:hover {  fill:blue; }
 
 </style>
 <body>
-  Carter's Happy Life
 <div id='dashboard'>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
@@ -201,7 +200,7 @@ function dashboard(id, fData){
 
         // create the third column for each segment.
         tr.append("td").attr("class",'legendFreq')
-            .text(function(d){ return d3.format(",")(d.freq);});
+            .text(function(d){ return d3.format(",")(d.freq)+"(h)";});
 
         // create the fourth column for each segment.
         tr.append("td").attr("class",'legendPerc')
